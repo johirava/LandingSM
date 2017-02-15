@@ -1,0 +1,26 @@
+
+.portfolio{
+	background-color: #F1F1F2;
+	padding-bottom: 80px;
+
+	.iconov{
+		@include icono($violeta);
+	}
+
+	article{
+   		margin-bottom: 25px;
+
+		h2{
+			@include h2(#231F20);
+		}
+
+		p{
+			@include p(#58585B, 13px);
+		}
+	}
+	
+	.imagenes{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}

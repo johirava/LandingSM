@@ -1,0 +1,68 @@
+$fuenteprincipal: 'Montserrat', sans-serif;
+$fuentesecundaria:'Roboto', sans-serif;
+$cyan: #1A94D0;
+$violeta: #922A8E;
+
+@mixin h2($color){
+  font-family:$fuenteprincipal;
+  font-size: 28px;
+  font-weight:600;
+  color:$color;
+  text-transform: uppercase;
+}
+
+@mixin p($color, $fontsize){
+  font-family:$fuentesecundaria;
+  font-size: $fontsize;
+  font-weight:300;
+  color:$color;
+}
+
+@mixin h3($color){
+  font-family:$fuenteprincipal;
+  font-size: 18px;
+  font-weight:600;
+  color:$color;
+  text-transform: uppercase;
+}
+
+@mixin icono($color){
+	text-align: center;
+	position: relative;
+   	top: -52px;
+
+	.ion-arrow-down-c{
+		color: $color;
+		font-size: 35px;
+		border:3px solid $color;
+		border-bottom: none;
+	    border-radius: 5px;
+	    padding: 1px 11px 0px 11px;
+	    position: relative;
+	    top: 8px;
+	}
+	
+	.line{
+		background-color: $color;
+		height: 3px;
+	}
+}
+
+@mixin boton($color){
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+	background-color: $color;
+	padding: 16px 21px;
+	border-radius: 5%;
+}
+
+@import '_homeHeader.scss';
+@import '_homeSocialMedia.scss';
+@import '_homePortfolio.scss';
+@import '_homeAdemas.scss';
+@import '_homeContacto.scss';
+@import '_homeFooter.scss';
+
+

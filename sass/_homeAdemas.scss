@@ -1,0 +1,83 @@
+.ademas{
+	background-color: $violeta;
+	padding-bottom: 50px;
+
+	.iconoc{
+		@include icono($cyan);
+	}
+
+	article{
+		h2{
+			@include h2(white);
+			font-size: 31px;
+		}
+
+		img{
+		    width: 55%;
+		    margin-top: 15px;
+		    margin-left: 3px;
+		}
+	}
+
+	.atencion{
+		background-color: white;
+		padding: 0px 50px 30px 50px;
+		text-align: center;
+
+		.ion-arrow-left-b{
+			color: white;
+		    font-size: 40px;
+		    position: relative;
+		    top: 9px;
+		    left: -173px;
+		}
+
+		h3{
+			@include h3(#231F20);
+			display: inline-block;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.ademasServicios, .ademasServiciosII{
+			article{
+				border: 3px solid $violeta;
+				width:32%;
+				padding:0px;
+
+				h4{
+					@include h3(white);
+					font-size: 16px;
+					background-color: $violeta;
+					margin:0px;
+					padding-top: 8px;
+					padding-bottom: 8px;
+
+					a{
+						text-decoration: none;
+						color: white;
+					}
+				}
+
+				p{
+					@include p(#58585B, 12px);
+					padding: 15px;
+				}
+
+				.p3{
+					padding-top: 25px;
+					padding-bottom: 22px;
+				}
+			}
+
+			article:nth-child(2){
+				margin-left: 12px;
+				margin-right: 12px;
+			}
+		}
+
+		.ademasServiciosII{
+			margin-top: 20px;
+		}
+	}
+}

@@ -1,0 +1,352 @@
+.homeHeader {
+  background-image: url(../img/buenosaires.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.9; }
+  .homeHeader .navbar {
+    background: rgba(35, 35, 44, 0.5);
+    border-color: rgba(231, 231, 231, 0.28); }
+    .homeHeader .navbar .navbar-brand {
+      padding: 0px;
+      margin: 5px 10px; }
+      .homeHeader .navbar .navbar-brand img {
+        width: 95%; }
+    .homeHeader .navbar ul li a {
+      text-decoration: none;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      color: white;
+      margin: 5px 10px; }
+    .homeHeader .navbar ul li a:hover {
+      color: #1A94D0; }
+  .homeHeader article {
+    text-align: center;
+    padding: 210px 0px 80px 0px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+    .homeHeader article p {
+      font-weight: 300;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 6px #000000; }
+    .homeHeader article h1 {
+      font-weight: 700;
+      font-size: 36px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px #000000;
+      margin-bottom: 70px; }
+    .homeHeader article a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 300;
+      background-color: #922A8E;
+      padding: 16px 21px;
+      border-radius: 5%; }
+    .homeHeader article a:hover {
+      background-color: #AD1FA8; }
+
+.socialMedia {
+  margin: 60px 0px 110px 0px; }
+  .socialMedia .socialMediaA h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #231F20;
+    text-transform: uppercase; }
+  .socialMedia .socialMediaA p {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #58585B;
+    text-align: justify;
+    margin-bottom: 30px; }
+    .socialMedia .socialMediaA p span {
+      font-weight: 700; }
+  .socialMedia .socialMediaIMG {
+    padding: 9px 0px 0px 75px; }
+    .socialMedia .socialMediaIMG img {
+      width: 26%; }
+  .socialMedia .socialMediaAC h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #231F20;
+    text-transform: uppercase;
+    margin: 30px 0px 34px 0px; }
+  .socialMedia .socialMediaAC ul {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #58585B;
+    letter-spacing: 1px;
+    line-height: 37px; }
+    .socialMedia .socialMediaAC ul .ion-arrow-right-b {
+      font-size: 17px;
+      margin-right: 10px;
+      position: relative;
+      top: 1px;
+      color: #1A94D0; }
+  .socialMedia .socialMediaAC .middle {
+    margin-left: 20px; }
+  .socialMedia .socialMediaAC .last {
+    margin-left: -20px; }
+
+.portfolio {
+  background-color: #F1F1F2;
+  padding-bottom: 80px; }
+  .portfolio .iconov {
+    text-align: center;
+    position: relative;
+    top: -52px; }
+    .portfolio .iconov .ion-arrow-down-c {
+      color: #922A8E;
+      font-size: 35px;
+      border: 3px solid #922A8E;
+      border-bottom: none;
+      border-radius: 5px;
+      padding: 1px 11px 0px 11px;
+      position: relative;
+      top: 8px; }
+    .portfolio .iconov .line {
+      background-color: #922A8E;
+      height: 3px; }
+  .portfolio article {
+    margin-bottom: 25px; }
+    .portfolio article h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #231F20;
+      text-transform: uppercase; }
+    .portfolio article p {
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      color: #58585B; }
+  .portfolio .imagenes {
+    text-align: center;
+    margin-bottom: 30px; }
+
+.ademas {
+  background-color: #922A8E;
+  padding-bottom: 50px; }
+  .ademas .iconoc {
+    text-align: center;
+    position: relative;
+    top: -52px; }
+    .ademas .iconoc .ion-arrow-down-c {
+      color: #1A94D0;
+      font-size: 35px;
+      border: 3px solid #1A94D0;
+      border-bottom: none;
+      border-radius: 5px;
+      padding: 1px 11px 0px 11px;
+      position: relative;
+      top: 8px; }
+    .ademas .iconoc .line {
+      background-color: #1A94D0;
+      height: 3px; }
+  .ademas article h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 31px; }
+  .ademas article img {
+    width: 55%;
+    margin-top: 15px;
+    margin-left: 3px; }
+  .ademas .atencion {
+    background-color: white;
+    padding: 0px 50px 30px 50px;
+    text-align: center; }
+    .ademas .atencion .ion-arrow-left-b {
+      color: white;
+      font-size: 40px;
+      position: relative;
+      top: 9px;
+      left: -173px; }
+    .ademas .atencion h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #231F20;
+      text-transform: uppercase;
+      display: inline-block;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    .ademas .atencion .ademasServicios article, .ademas .atencion .ademasServiciosII article {
+      border: 3px solid #922A8E;
+      width: 32%;
+      padding: 0px; }
+      .ademas .atencion .ademasServicios article h4, .ademas .atencion .ademasServiciosII article h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+        background-color: #922A8E;
+        margin: 0px;
+        padding-top: 8px;
+        padding-bottom: 8px; }
+        .ademas .atencion .ademasServicios article h4 a, .ademas .atencion .ademasServiciosII article h4 a {
+          text-decoration: none;
+          color: white; }
+      .ademas .atencion .ademasServicios article p, .ademas .atencion .ademasServiciosII article p {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: #58585B;
+        padding: 15px; }
+      .ademas .atencion .ademasServicios article .p3, .ademas .atencion .ademasServiciosII article .p3 {
+        padding-top: 25px;
+        padding-bottom: 22px; }
+    .ademas .atencion .ademasServicios article:nth-child(2), .ademas .atencion .ademasServiciosII article:nth-child(2) {
+      margin-left: 12px;
+      margin-right: 12px; }
+    .ademas .atencion .ademasServiciosII {
+      margin-top: 20px; }
+
+.contacto {
+  padding: 100px 0px 110px 0px; }
+  .contacto article h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #231F20;
+    text-transform: uppercase; }
+  .contacto .formulario {
+    margin-top: 20px; }
+    .contacto .formulario form {
+      font-family: "Roboto", sans-serif; }
+      .contacto .formulario form .input-group {
+        margin-bottom: 15px; }
+      .contacto .formulario form .input-group-addon {
+        color: white;
+        background-color: #8DC9E6; }
+      .contacto .formulario form .form-group {
+        margin-top: 36px; }
+      .contacto .formulario form button {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: white; }
+      .contacto .formulario form .btn-default {
+        text-align: center;
+        background-color: #8DC9E6;
+        width: 100%; }
+      .contacto .formulario form .btn-default:hover {
+        background-color: #1A94D0; }
+
+footer {
+  font-family: "Montserrat", sans-serif; }
+  footer .footer1 {
+    background-color: #313131;
+    padding-top: 15px; }
+    footer .footer1 .sectionfooter li, footer .footer1 .socialfooter li {
+      display: inline-block;
+      text-align: center;
+      margin: 5px 5px; }
+    footer .footer1 .sectionfooter a, footer .footer1 .socialfooter a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 8px;
+      color: grey; }
+    footer .footer1 .sectionfooter a:hover, footer .footer1 .socialfooter a:hover {
+      color: white; }
+    footer .footer1 .sectionfooter span, footer .footer1 .socialfooter span {
+      display: block;
+      background-color: #4A4A4A;
+      padding: 7px 13px;
+      border-radius: 49%;
+      font-size: 19px;
+      margin: 3px; }
+    footer .footer1 .sectionfooter span:hover, footer .footer1 .socialfooter span:hover {
+      background-color: #31AAE1; }
+    footer .footer1 .logofooter {
+      text-align: center;
+      padding-top: 10px; }
+    footer .footer1 .socialfooter {
+      text-align: right; }
+      footer .footer1 .socialfooter .ion-social-facebook {
+        padding: 7px 18px; }
+      footer .footer1 .socialfooter .ion-social-linkedin {
+        padding: 7px 15px; }
+  footer .footer2 {
+    background-color: #2D2D2D;
+    padding: 30px 20px;
+    color: grey;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif; }
+    footer .footer2 .sobrenosotros {
+      padding-right: 100px; }
+      footer .footer2 .sobrenosotros h5 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: grey;
+        text-transform: uppercase;
+        font-size: 12px; }
+      footer .footer2 .sobrenosotros p {
+        font-family: "Roboto", sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        color: grey; }
+      footer .footer2 .sobrenosotros table tr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-top: 1px solid #3d3c3c; }
+        footer .footer2 .sobrenosotros table tr td {
+          padding: 6px 9px;
+          vertical-align: middle; }
+          footer .footer2 .sobrenosotros table tr td span {
+            text-align: center;
+            font-size: 17px; }
+    footer .footer2 .mailfooter {
+      text-align: right;
+      padding-left: 100px; }
+      footer .footer2 .mailfooter h5 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: grey;
+        text-transform: uppercase;
+        font-size: 12px; }
+      footer .footer2 .mailfooter .input-group {
+        height: 28px; }
+        footer .footer2 .mailfooter .input-group .ion-checkmark {
+          color: #1A94D0; }
+      footer .footer2 .mailfooter .form-control {
+        font-size: 10px;
+        text-transform: uppercase;
+        text-align: right; }
+      footer .footer2 .mailfooter p {
+        margin-top: 10px; }
+      footer .footer2 .mailfooter .linefooter {
+        height: 1px;
+        background-color: grey;
+        width: 100%;
+        opacity: 0.5;
+        margin: 15px 0px; }
+      footer .footer2 .mailfooter ul {
+        text-align: right;
+        margin-top: 10px; }
+        footer .footer2 .mailfooter ul li {
+          display: inline-block; }
+          footer .footer2 .mailfooter ul li span {
+            font-size: 21px;
+            color: grey;
+            padding-left: 10px;
+            padding-right: 10px; }
+          footer .footer2 .mailfooter ul li span:hover {
+            color: #30A9E0; }
+
+/*# sourceMappingURL=style.css.map */

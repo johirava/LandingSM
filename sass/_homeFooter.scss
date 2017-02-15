@@ -1,0 +1,154 @@
+footer{
+	font-family: $fuenteprincipal;
+
+	.footer1{
+		background-color: #313131;
+		padding-top: 15px;
+
+		.sectionfooter, .socialfooter{
+			li{
+				display: inline-block;
+				text-align: center;
+				margin: 5px 5px;
+			}
+
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 8px;
+				color: grey;
+			}
+
+			a:hover{
+				color: white;
+			}
+
+			span{
+				display: block;
+			    background-color: #4A4A4A;
+			    padding: 7px 13px;
+			    border-radius: 49%;
+			    font-size: 19px;
+			    margin:3px;
+			}
+
+			span:hover{
+				background-color: #31AAE1;
+			}
+		}
+
+		.logofooter{
+			text-align:center;
+			padding-top: 10px;
+		}
+
+		.socialfooter{
+			text-align: right;
+
+			.ion-social-facebook{
+			    padding: 7px 18px;			
+			}
+
+			.ion-social-linkedin{
+				padding: 7px 15px;
+			}
+		}
+	}
+
+	.footer2{
+		background-color: #2D2D2D;
+		padding: 30px 20px;
+		color: grey;
+		font-size: 10px;
+		font-family: $fuentesecundaria;
+		
+		.sobrenosotros{
+			padding-right: 100px;
+
+			h5{
+				@include h3(grey);
+				font-size: 12px;
+			}
+
+			p{
+				@include p(grey, 10px);
+			}
+
+			table{
+				tr{
+					margin-top: 5px;
+					margin-bottom: 5px;
+					border-top: 1px solid #3d3c3c;
+
+					td{
+						padding: 6px 9px;
+						vertical-align: middle;
+
+						span{
+							text-align: center;
+							font-size: 17px;
+						}
+					}
+				}
+			}
+		}
+
+
+		.mailfooter{
+			text-align: right;
+			padding-left: 100px;
+
+			h5{
+				@include h3(grey);
+				font-size: 12px;
+			}
+
+			.input-group{
+				height: 28px;
+
+				.ion-checkmark{
+					color: $cyan;
+				}
+			}
+
+			.form-control{
+				font-size: 10px;
+				text-transform: uppercase;
+				text-align: right;
+			}
+
+			p{
+				margin-top: 10px;
+			}
+
+			.linefooter{
+				height: 1px;
+				background-color: grey;
+				width: 100%;
+				opacity: 0.5;
+				margin: 15px 0px 
+			}
+
+			ul{
+				text-align: right;
+				margin-top: 10px;
+
+				li{
+					display: inline-block;
+
+					span{
+						font-size: 21px;
+						color:grey;
+						padding-left:10px;
+						padding-right:10px;
+					}
+
+					span:hover{
+						color: #30A9E0;
+					}
+
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.contacto{
+	padding: 100px 0px 110px 0px;
+
+	article{
+		h2{
+			@include h2(#231F20);
+		}
+	}
+
+	.formulario{
+		margin-top: 20px;
+
+		form{
+			font-family: $fuentesecundaria;
+
+			.input-group{
+				margin-bottom: 15px;
+			}
+
+			.input-group-addon{
+				color: white;
+				background-color: #8DC9E6;
+			}
+
+			.form-group{
+				margin-top: 36px;
+			}
+
+			button{
+				font-family: $fuenteprincipal;
+				font-weight: 600;
+				text-transform: uppercase;
+				font-size: 12px;
+				color: white;
+			}
+
+			.btn-default{
+				text-align: center;
+				background-color: #8DC9E6;
+				width: 100%;
+			}
+
+			.btn-default:hover{
+				background-color: $cyan;
+			}
+		}
+	}
+}

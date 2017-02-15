@@ -1,0 +1,70 @@
+.homeHeader{
+	background-image: url(../img/buenosaires.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 0.9;
+
+	.navbar{
+		background:rgba(35, 35, 44, 0.50);
+		border-color:rgba(231, 231, 231, 0.28);
+
+		.navbar-brand{
+			padding:0px;
+			margin:5px 10px;
+
+			img{
+				width:95%;
+			}
+		}
+
+		ul{
+			li{
+				a{
+					text-decoration: none;
+					font-size: 11px;
+					text-transform: uppercase;
+					font-family: $fuenteprincipal;
+					font-weight: 600;
+					color:white;
+					margin:5px 10px;
+				}
+
+				a:hover{
+					color: $cyan;
+				}
+			}
+		}
+	}
+
+	article{
+		text-align: center;
+		padding: 210px 0px 80px 0px;
+		color:white;
+		font-family: $fuenteprincipal;
+		text-transform: uppercase;
+
+		p{
+			font-weight: 300;
+			font-size: 20px;
+			letter-spacing: 1px;
+			text-shadow: 2px 2px 6px #000000;
+		}
+
+		h1{
+			font-weight: 700;
+			font-size: 36px;
+			letter-spacing: 2px;
+			text-shadow: 2px 2px 6px #000000;
+			margin-bottom: 70px
+		}
+
+		a{
+			@include boton($violeta);
+		}
+
+		a:hover{
+			background-color: #AD1FA8;
+		}
+	}
+}
