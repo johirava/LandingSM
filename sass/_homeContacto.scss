@@ -1,9 +1,11 @@
 .contacto{
-	padding: 100px 0px 110px 0px;
+	padding: 70px 0px 110px 0px;
 
 	article{
 		h2{
 			@include h2(#231F20);
+			position: relative;
+			z-index:-1;
 		}
 	}
 

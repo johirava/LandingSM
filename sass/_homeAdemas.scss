@@ -39,11 +39,14 @@
 			padding-bottom: 15px;
 		}
 
-		.ademasServicios, .ademasServiciosII{
+		.ademasServicios{
 			article{
 				border: 3px solid $violeta;
-				width:32%;
-				padding:0px;
+				width:31%;
+				height: 120px;
+				display: inline-block;
+				vertical-align: middle;
+				margin:5px;
 
 				h4{
 					@include h3(white);
@@ -63,21 +66,104 @@
 					@include p(#58585B, 12px);
 					padding: 15px;
 				}
-
-				.p3{
-					padding-top: 25px;
-					padding-bottom: 22px;
-				}
-			}
-
-			article:nth-child(2){
-				margin-left: 12px;
-				margin-right: 12px;
 			}
 		}
 
 		.ademasServiciosII{
 			margin-top: 20px;
+		}
+	}
+}
+
+/*Media Queries*/
+
+@media (max-width: 1200px){
+	.ademas{	
+		.atencion{
+			.ion-arrow-left-b{
+				position: relative;
+    			left: -98px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px){
+	.ademas{
+		article{
+			h2{
+				margin-bottom: 35px;
+			}
+
+			img{
+			    display: none;
+			}
+		}
+
+		.atencion{
+			.ion-arrow-left-b{
+				position: relative;
+    			left: -105px;
+			}
+
+			.ademasServicios{
+				article{
+					width:45%;
+					height: 100px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 690px){
+	.ademas{
+		.atencion{
+			h3{
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 560px){
+	.ademas{
+		.atencion{
+			.ion-arrow-left-b{
+				display: none;
+			}
+
+			h3{
+				font-size: 16px;
+			}
+
+			.ademasServicios{
+				article{
+					width:90%;
+					height: 80px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 468px){
+	.ademas{
+		.atencion{
+			.ademasServicios{
+				article{
+					height: 85px;
+
+					h4{
+						padding-top: 3px;
+						padding-bottom: 3px;
+					}
+
+					p{
+						padding: 10px;
+					}
+				}
+			}
 		}
 	}
 }

@@ -55,3 +55,65 @@
 
 	}
 }
+
+
+/*Media Queries*/
+
+@media (max-width: 768px){
+	.socialMedia{
+		margin: 60px 0px 80px 0px;
+
+		.socialMediaA{
+			p{
+				margin-bottom: 15px;
+			}
+		}
+
+		.socialMediaIMG{
+			padding: 0px 0px 0px 10px;
+
+			img{
+				width: 20%;
+			}
+		}
+
+		.socialMediaAC{
+			h3{
+			margin: 30px 0px 30px 0px;
+			}
+
+			ul, .middle, .last{
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 540px){
+	.socialMedia{
+		margin: 35px 0px 60px 0px;
+
+		.socialMediaIMG{
+			img{
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 468px){
+	.socialMedia{
+		.socialMediaAC{
+			ul{
+				line-height: 20px;
+				letter-spacing: 0px;
+				font-size: 11px;
+			}
+
+			ul, .middle, .last{
+				margin-left: 0px;
+			}
+
+		}
+	}
+}

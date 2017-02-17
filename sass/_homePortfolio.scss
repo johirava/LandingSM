@@ -24,3 +24,24 @@
 		margin-bottom: 30px;
 	}
 }
+
+/*Media Queries*/
+
+@media (max-width: 1024px){
+
+	.portfolio{
+	background-color: #F1F1F2;
+	padding-bottom: 80px;
+
+	.imagenes{
+		margin:auto;
+		
+		img{
+			margin:auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+}

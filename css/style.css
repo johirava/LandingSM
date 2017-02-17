@@ -3,25 +3,41 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  opacity: 0.9; }
+  opacity: 0.9;
+  position: relative;
+  z-index: 3; }
   .homeHeader .navbar {
     background: rgba(35, 35, 44, 0.5);
-    border-color: rgba(231, 231, 231, 0.28); }
+    border-left: none;
+    border-right: none;
+    border-color: rgba(231, 231, 231, 0.28);
+    border-radius: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; }
     .homeHeader .navbar .navbar-brand {
       padding: 0px;
       margin: 5px 10px; }
       .homeHeader .navbar .navbar-brand img {
         width: 95%; }
-    .homeHeader .navbar ul li a {
-      text-decoration: none;
-      font-size: 11px;
-      text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600;
-      color: white;
-      margin: 5px 10px; }
-    .homeHeader .navbar ul li a:hover {
-      color: #1A94D0; }
+    .homeHeader .navbar ul {
+      float: right;
+      margin-top: 18px; }
+      .homeHeader .navbar ul li {
+        display: inline-block; }
+        .homeHeader .navbar ul li a {
+          text-decoration: none;
+          font-size: 11px;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+          color: white;
+          margin: 5px 10px; }
+        .homeHeader .navbar ul li a:hover {
+          color: #1A94D0; }
   .homeHeader article {
     text-align: center;
     padding: 210px 0px 80px 0px;
@@ -50,6 +66,41 @@
     .homeHeader article a:hover {
       background-color: #AD1FA8; }
 
+/*Media Queries*/
+@media (max-width: 768px) {
+  .homeHeader .navbar .navbar-brand img {
+    width: 90%; }
+  .homeHeader article {
+    padding: 130px 0px 70px 0px; } }
+@media (max-width: 540px) {
+  .homeHeader {
+    background-size: 150%; }
+    .homeHeader .navbar .navbar-brand img {
+      width: 80%; }
+    .homeHeader article {
+      padding: 75px 0px 45px 0px; }
+      .homeHeader article h1 {
+        font-size: 28px;
+        margin-bottom: 35px; }
+      .homeHeader article p {
+        font-size: 16px; } }
+@media (max-width: 320px) {
+  .homeHeader article {
+    padding: 70px 0px 40px 0px; }
+    .homeHeader article h1 {
+      font-size: 22px;
+      margin-bottom: 30px; }
+    .homeHeader article p {
+      font-size: 15px; }
+    .homeHeader article a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 300;
+      background-color: #922A8E;
+      padding: 16px 21px;
+      border-radius: 5%;
+      font-size: 10px; } }
 .socialMedia {
   margin: 60px 0px 110px 0px; }
   .socialMedia .socialMediaA h2 {
@@ -96,6 +147,32 @@
   .socialMedia .socialMediaAC .last {
     margin-left: -20px; }
 
+/*Media Queries*/
+@media (max-width: 768px) {
+  .socialMedia {
+    margin: 60px 0px 80px 0px; }
+    .socialMedia .socialMediaA p {
+      margin-bottom: 15px; }
+    .socialMedia .socialMediaIMG {
+      padding: 0px 0px 0px 10px; }
+      .socialMedia .socialMediaIMG img {
+        width: 20%; }
+    .socialMedia .socialMediaAC h3 {
+      margin: 30px 0px 30px 0px; }
+    .socialMedia .socialMediaAC ul, .socialMedia .socialMediaAC .middle, .socialMedia .socialMediaAC .last {
+      margin-left: 10px; } }
+@media (max-width: 540px) {
+  .socialMedia {
+    margin: 35px 0px 60px 0px; }
+    .socialMedia .socialMediaIMG img {
+      display: none; } }
+@media (max-width: 468px) {
+  .socialMedia .socialMediaAC ul {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 11px; }
+  .socialMedia .socialMediaAC ul, .socialMedia .socialMediaAC .middle, .socialMedia .socialMediaAC .last {
+    margin-left: 0px; } }
 .portfolio {
   background-color: #F1F1F2;
   padding-bottom: 80px; }
@@ -132,6 +209,17 @@
     text-align: center;
     margin-bottom: 30px; }
 
+/*Media Queries*/
+@media (max-width: 1024px) {
+  .portfolio {
+    background-color: #F1F1F2;
+    padding-bottom: 80px; }
+    .portfolio .imagenes {
+      margin: auto; }
+      .portfolio .imagenes img {
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px; } }
 .ademas {
   background-color: #922A8E;
   padding-bottom: 50px; }
@@ -181,11 +269,14 @@
       display: inline-block;
       padding-top: 15px;
       padding-bottom: 15px; }
-    .ademas .atencion .ademasServicios article, .ademas .atencion .ademasServiciosII article {
+    .ademas .atencion .ademasServicios article {
       border: 3px solid #922A8E;
-      width: 32%;
-      padding: 0px; }
-      .ademas .atencion .ademasServicios article h4, .ademas .atencion .ademasServiciosII article h4 {
+      width: 31%;
+      height: 120px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 5px; }
+      .ademas .atencion .ademasServicios article h4 {
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
         font-weight: 600;
@@ -196,32 +287,63 @@
         margin: 0px;
         padding-top: 8px;
         padding-bottom: 8px; }
-        .ademas .atencion .ademasServicios article h4 a, .ademas .atencion .ademasServiciosII article h4 a {
+        .ademas .atencion .ademasServicios article h4 a {
           text-decoration: none;
           color: white; }
-      .ademas .atencion .ademasServicios article p, .ademas .atencion .ademasServiciosII article p {
+      .ademas .atencion .ademasServicios article p {
         font-family: "Roboto", sans-serif;
         font-size: 12px;
         font-weight: 300;
         color: #58585B;
         padding: 15px; }
-      .ademas .atencion .ademasServicios article .p3, .ademas .atencion .ademasServiciosII article .p3 {
-        padding-top: 25px;
-        padding-bottom: 22px; }
-    .ademas .atencion .ademasServicios article:nth-child(2), .ademas .atencion .ademasServiciosII article:nth-child(2) {
-      margin-left: 12px;
-      margin-right: 12px; }
     .ademas .atencion .ademasServiciosII {
       margin-top: 20px; }
 
+/*Media Queries*/
+@media (max-width: 1200px) {
+  .ademas .atencion .ion-arrow-left-b {
+    position: relative;
+    left: -98px; } }
+@media (max-width: 991px) {
+  .ademas article h2 {
+    margin-bottom: 35px; }
+  .ademas article img {
+    display: none; }
+  .ademas .atencion .ion-arrow-left-b {
+    position: relative;
+    left: -105px; }
+  .ademas .atencion .ademasServicios article {
+    width: 45%;
+    height: 100px; } }
+@media (max-width: 690px) {
+  .ademas .atencion h3 {
+    font-size: 16px; } }
+@media (max-width: 560px) {
+  .ademas .atencion .ion-arrow-left-b {
+    display: none; }
+  .ademas .atencion h3 {
+    font-size: 16px; }
+  .ademas .atencion .ademasServicios article {
+    width: 90%;
+    height: 80px; } }
+@media (max-width: 468px) {
+  .ademas .atencion .ademasServicios article {
+    height: 85px; }
+    .ademas .atencion .ademasServicios article h4 {
+      padding-top: 3px;
+      padding-bottom: 3px; }
+    .ademas .atencion .ademasServicios article p {
+      padding: 10px; } }
 .contacto {
-  padding: 100px 0px 110px 0px; }
+  padding: 70px 0px 110px 0px; }
   .contacto article h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: #231F20;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative;
+    z-index: -1; }
   .contacto .formulario {
     margin-top: 20px; }
     .contacto .formulario form {
@@ -278,6 +400,8 @@ footer {
       text-align: right; }
       footer .footer1 .socialfooter .ion-social-facebook {
         padding: 7px 18px; }
+      footer .footer1 .socialfooter .ion-home {
+        padding: 7px 17px; }
       footer .footer1 .socialfooter .ion-social-linkedin {
         padding: 7px 15px; }
   footer .footer2 {
@@ -348,5 +472,30 @@ footer {
             padding-right: 10px; }
           footer .footer2 .mailfooter ul li span:hover {
             color: #30A9E0; }
+
+/*Media Queries*/
+@media (max-width: 992px) {
+  footer {
+    /*me quede aca*/ }
+    footer .footer1 .sectionfooter {
+      display: none; }
+    footer .footer1 .socialfooter {
+      display: block;
+      text-align: center;
+      padding-top: 15px; }
+    footer .footer1 .logofooter {
+      display: block;
+      padding: 0px; }
+    footer .footer2 {
+      padding: 20px 10px; }
+      footer .footer2 .sobrenosotros {
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        padding: 0px; }
+      footer .footer2 .mailfooter {
+        width: 100%;
+        text-align: left;
+        padding: 15px 0px 0px 0px; } }
 
 /*# sourceMappingURL=style.css.map */
